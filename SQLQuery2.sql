@@ -10,7 +10,9 @@ INSERT INTO PRODUCTS (Id, Name, Price, Brand)
 values 
 (1, 'X5', 10000, 'BMW'),
 (2, 'X6', 15000, 'BMW'),
-(3, '525', 40000, 'BMW')
+(3, '525', 40000, 'BMW'),
+(3, 'SCLASS', 40000, 'Mercedes')
+
 
 SELECT Id, Name, Price, Brand FROM PRODUCTS WHERE PRICE < (SELECT AVG(PRICE) FROM PRODUCTS)
 
